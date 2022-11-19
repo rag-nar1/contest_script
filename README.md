@@ -8,3 +8,5 @@ this script job is to make a contest such that it contains A,B,C problems from a
 https://user-images.githubusercontent.com/116851979/202842093-4d5f689c-d7e9-4bce-84fa-14141d6acf16.mp4
 
 
+
+**that is what is happening behind the senses**
