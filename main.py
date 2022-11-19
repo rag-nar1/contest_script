@@ -33,7 +33,7 @@ def read_file(file):
 # Create chrome driver
 def createDriver():
     chrome_options = webdriver.ChromeOptions()
-    chrome_options.add_argument("--headless")
+   # chrome_options.add_argument("--headless")
     chrome_options.add_argument("--disable-dev-shm-usage")
     chrome_options.add_argument("--no-sandbox")
     chrome_options.add_argument("--disable-notifications")
@@ -124,7 +124,7 @@ def make_contest(driver,contest_num,links):
     time.sleep(5)
 
 def main():
-    file = open('script/final_links.txt', 'r')
+    file = open('final_links.txt', 'r')
     links=read_file(file)
     file.close()
     driver=createDriver()
