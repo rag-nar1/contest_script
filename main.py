@@ -73,13 +73,13 @@ def make_contest(driver,contest_num,links):
     contest_name=f'contest {contest_num}'
     Handle = os.getenv('CF_HANDEL')
     Password = os.getenv('CF_PASS')
-    driver.get('https://codeforces.com/enter?back=%2F')
+    driver.get('https://codeforces.com/enter?back=%2F%3Ff0a28%3D1')
     ids=get_ids(links)
     find_element(driver,By.XPATH,'//*[@id="handleOrEmail"]').send_keys(Handle)
     find_element(driver,By.XPATH,'//*[@id="password"]').send_keys(Password)
     find_element(driver,By.XPATH,' //*[@id="enterForm"]/table/tbody/tr[4]/td/div[1]/input').click()
    
-    time.sleep(3)
+    time.sleep(10)
     find_element(driver,By.XPATH,'//*[@id="body"]/div[3]/div[5]/ul/li[5]/a').click()
     find_element(driver,By.XPATH,'//*[@id="pageContent"]/div[1]/ul/li[3]/a').click()
     find_element(driver,By.XPATH,'//*[@id="pageContent"]/div[2]/div/a').click()
